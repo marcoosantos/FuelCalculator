@@ -1,9 +1,7 @@
 package com.example.fuelcalculator
 
 import android.content.Intent
-import android.content.IntentSender
 import android.os.Bundle
-import android.provider.Telephony.Mms.Intents
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -12,34 +10,37 @@ import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 
-class FuelActivity : AppCompatActivity() {
+class ConsumoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_fuel)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_consumo)
 
-        val edtValor = findViewById<TextInputEditText>(R.id.edt_valor)
+        val edtConsumo = findViewById<TextInputEditText>(R.id.edt_consumo)
 
-        val btn_proximo = findViewById<Button>(R.id.btn_proximo)
+        val btn_proximo2 = findViewById<Button>(R.id.btn_proximo2)
 
-        btn_proximo.setOnClickListener {
+        btn_proximo2.setOnClickListener {
 
-            val valorStr: String = edtValor.text.toString()
+            val consumoStr: String = edtConsumo.text.toString()
+            val preco = intent.getFloatExtra(KEY_PRECO, 0f)
 
-            if (valorStr == "") {
+            if (consumoStr == "") {
 
                 Snackbar
                     .make(
-                        edtValor,
+                        edtConsumo,
                         "Preencha todos os campos",
                         Snackbar.LENGTH_LONG
                     )
                     .show()
             } else {
 
-                val valor = valorStr.toFloat()
+                val consumo = consumoStr.toFloat()
 
-                val intent = Intent(this, ConsumoActivity::class.java)
-                intent.putExtra(KEY_PRECO, valor)
+                val intent = Intent(this, DistanceActivity::class.java)
+                intent.putExtra(KEY_CONSUMO, consumo)
+                intent.putExtra(KEY_PRECO, preco)
                 startActivity(intent)
             }
         }
