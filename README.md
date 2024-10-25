@@ -6,7 +6,7 @@ An Android application developed 100% in Kotlin that allows users to calculate t
 - Input the distance to the destination
 - Calculate the total cost of the trip
 - Navigation between screens to enhance user experience
-- ## 📸 Screenshots
+## 📸 Screenshots
 <img src="https://github.com/user-attachments/assets/1e37b964-284e-4111-8a52-43b78ee4e113" width=260/> <img src="https://github.com/user-attachments/assets/ab22d3f5-5d58-45d0-858e-92b9a47f2917" width=260/> <img src="https://github.com/user-attachments/assets/327b55c3-4aa5-4af8-88de-d15c2c3742fe" width=260/> <img src="https://github.com/user-attachments/assets/ce07663c-ed08-4993-b9a9-bcffcef8afbe"  width=260/> <img src="https://github.com/user-attachments/assets/da955a81-5a60-4ab5-89aa-461e8018d63c" width=260>
 ## 🔧 Technologies used
 - Kotlin
