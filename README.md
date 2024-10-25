@@ -1,6 +1,6 @@
 # Fuel Calculator
 An Android application developed 100% in Kotlin that allows users to calculate the fuel cost for a trip based on the fuel price, car consumption, and distance to the destination.
-## Features 
+## 📱 Features 
 - Enter the fuel price
 - Specify the car's fuel consumption (km/l)
 - Input the distance to the destination
@@ -8,7 +8,7 @@ An Android application developed 100% in Kotlin that allows users to calculate t
 - Navigation between screens to enhance user experience
 - ## 📸 Screenshots
 <img src="https://github.com/user-attachments/assets/1e37b964-284e-4111-8a52-43b78ee4e113" width=260/> <img src="https://github.com/user-attachments/assets/ab22d3f5-5d58-45d0-858e-92b9a47f2917" width=260/> <img src="https://github.com/user-attachments/assets/327b55c3-4aa5-4af8-88de-d15c2c3742fe" width=260/> <img src="https://github.com/user-attachments/assets/ce07663c-ed08-4993-b9a9-bcffcef8afbe"  width=260/> <img src="https://github.com/user-attachments/assets/da955a81-5a60-4ab5-89aa-461e8018d63c" width=260>
-## Technologies used
+## 🔧 Technologies used
 - Kotlin
 - Android SDK
 - XML for layouts
@@ -23,7 +23,7 @@ An Android application developed 100% in Kotlin that allows users to calculate t
   - TextView
   - EditText
   - Button     
-## License
+## 🗃️ License
 ```
 The MIT License (MIT)
 
